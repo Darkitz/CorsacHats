@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CorsacHats": {
+      "commandName": "Executable",
+      "executablePath": "$(AmongUs)\\Among Us.exe"
+    }
+  }
+}

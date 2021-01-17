@@ -1,17 +1,11 @@
-﻿using HarmonyLib;
+﻿using Reactor;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using UnhollowerBaseLib;
 using UnityEngine;
-using BepInEx;
-using BepInEx.IL2CPP;
-using HatManager = OFCPCFDHIEF;
+using UnhollowerBaseLib;
 
 
 namespace CorsacHats
@@ -24,6 +18,7 @@ namespace CorsacHats
         {
             internal delegate bool d_LoadImage(IntPtr tex, IntPtr data, bool markNonReadable);
             internal static d_LoadImage iCall_LoadImage;
+
 
             public static bool LoadImage(Texture2D tex, byte[] data, bool markNonReadable)
             {
